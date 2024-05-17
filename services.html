@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background: url('pexels-visit-greenland-108649-360912.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .services ul {
+            line-height: 2.5; /* 增加 services 部分的行距 */
+        }
+        .services li {
+            margin-bottom: 15px; /* 增加每个服务项目的间距 */
+        }
+        .services li b {
+            color: #007BFF; /* 设置服务名称的颜色 */
+            font-size: 1.2em; /* 增大字体 */
+            display: block; /* 确保服务名称占据单独一行 */
+        }
+        .services p {
+            margin: 0;
+            text-indent: 2em; /* 首行缩进2字符 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en" style="display:none;">Home</a><a href="index.html" data-lang="jp" style="display:none;">ホーム</a></li>
+                <li><a href="about.html" data-lang="zh">关于我</a><a href="about.html" data-lang="en" style="display:none;">About Me</a><a href="about.html" data-lang="jp" style="display:none;">私について</a></li>
+                <li><a href="services.html" data-lang="zh">服务</a><a href="services.html" data-lang="en" style="display:none;">Services</a><a href="services.html" data-lang="jp" style="display:none;">サービス</a></li>
+                <li><a href="contact.html" data-lang="zh">联系我</a><a href="contact.html" data-lang="en" style="display:none;">Contact Me</a><a href="contact.html" data-lang="jp" style="display:none;">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="language-switch">
+            <button onclick="changeLanguage('zh')">中文</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('jp')">日本語</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 data-lang="zh">服务</h1>
+        <h1 data-lang="en" style="display:none;">Services</h1>
+        <h1 data-lang="jp" style="display:none;">サービス</h1>
+        <ul>
+            <li data-lang="zh">
+                <b>审计文件准备及支持</b>
+                <p>提供专业的审计文件准备和支持服务。</p>
+            </li>
+            <li data-lang="en" style="display:none;">
+                <b>Audit file preparation and support</b>
+                <p>Providing professional audit file preparation and support services.</p>
+            </li>
+            <li data-lang="jp" style="display:none;">
+                <b>監査ファイルの準備とサポート</b>
+                <p>プロフェッショナルな監査ファイルの準備とサポートサービスを提供します。</p>
+            </li>
+            <li data-lang="zh">
+                <b>总账分录</b>
+                <p>确保财务记录的准确性和完整性。</p>
+            </li>
+            <li data-lang="en" style="display:none;">
+                <b>General ledger entries</b>
+                <p>Ensuring the accuracy and completeness of financial records.</p>
+            </li>
+            <li data-lang="jp" style="display:none;">
+                <b>総勘定元帳の入力</b>
+                <p>財務記録の正確性と完全性を確保します。</p>
+            </li>
+            <li data-lang="zh">
+                <b>与客户沟通</b>
+                <p>提供高效的客户沟通服务。</p>
+            </li>
+            <li data-lang="en" style="display:none;">
+                <b>Client communication</b>
+                <p>Providing efficient client communication services.</p>
+            </li>
+            <li data-lang="jp" style="display:none;">
+                <b>クライアントとのコミュニケーション</b>
+                <p>効率的なクライアントとのコミュニケーションサービスを提供します。</p>
+            </li>
+            <li data-lang="zh">
+                <b>财务报表准备</b>
+                <p>帮助客户准备准确的财务报表。</p>
+            </li>
+            <li data-lang="en" style="display:none;">
+                <b>Financial statement preparation</b>
+                <p>Helping clients prepare accurate financial statements.</p>
+            </li>
+            <li data-lang="jp" style="display:none;">
+                <b>財務諸表の作成</b>
+                <p>クライアントが正確な財務諸表を準備するのをサポートします。</p>
+            </li>
+            <li data-lang="zh">
+                <b>工资单和GST申报</b>
+                <p>提供工资单处理和GST申报服务。</p>
+            </li>
+            <li data-lang="en" style="display:none;">
+                <b>Payroll and GST filing</b>
+                <p>Providing payroll processing and GST filing services.</p>
+            </li>
+            <li data-lang="jp" style="display:none;">
+                <b>給与およびGST申告</b>
+                <p>給与処理およびGST申告サービスを提供します。</p>
+            </li>
+            <li data-lang="zh">
+                <b>账户对账</b>
+                <p>确保账户对账的准确性。</p>
+            </li>
+            <li data-lang="en" style="display:none;">
+                <b>Account reconciliation</b>
+                <p>Ensuring the accuracy of account reconciliation.</p>
+            </li>
+            <li data-lang="jp" style="display:none;">
+                <b>口座の調整</b>
+                <p>口座の調整の正確性を確保します。</p>
+            </li>
+            <li data-lang="zh">
+                <b>公司和个人报税准备</b>
+                <p>提供公司和个人报税准备服务。</p>
+            </li>
+            <li data-lang="en" style="display:none;">
+                <b>Corporate and personal tax preparation</b>
+                <p>Providing corporate and personal tax preparation services.</p>
+            </li>
+            <li data-lang="jp" style="display:none;">
+                <b>企業および個人の税務申告の準備</b>
+                <p>企業および個人の税務申告の準備サービスを提供します。</p>
+            </li>
+            <li data-lang="zh">
+                <b>簿记和行政任务</b>
+                <p>提供专业的簿记和行政任务服务。</p>
+            </li>
+            <li data-lang="en" style="display:none;">
+                <b>Bookkeeping and administrative tasks</b>
+                <p>Providing professional bookkeeping and administrative task services.</p>
+            </li>
+            <li data-lang="jp" style="display:none;">
+                <b>簿記および管理業務</b>
+                <p>プロフェッショナルな簿記および管理業務サービスを提供します。</p>
+            </li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yanfeng Shi. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background: url('pexels-visit-greenland-108649-360912.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en" style="display:none;">Home</a><a href="index.html" data-lang="jp" style="display:none;">ホーム</a></li>
+                <li><a href="about.html" data-lang="zh">关于我</a><a href="about.html" data-lang="en" style="display:none;">About Me</a><a href="about.html" data-lang="jp" style="display:none;">私について</a></li>
+                <li><a href="services.html" data-lang="zh">服务</a><a href="services.html" data-lang="en" style="display:none;">Services</a><a href="services.html" data-lang="jp" style="display:none;">サービス</a></li>
+                <li><a href="contact.html" data-lang="zh">联系我</a><a href="contact.html" data-lang="en" style="display:none;">Contact Me</a><a href="contact.html" data-lang="jp" style="display:none;">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="language-switch">
+            <button onclick="changeLanguage('zh')">中文</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('jp')">日本語</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 data-lang="zh">联系我们</h1>
+        <h1 data-lang="en" style="display:none;">Contact Me</h1>
+        <h1 data-lang="jp" style="display:none;">お問い合わせ</h1>
+
+        <section class="contact-info">
+            <p>Email: <a href="mailto:csxxyz@gmail.com">csxxyz@gmail.com</a></p>
+            <p>Phone: 778-873-1220</p>
+        </section>
+
+        <section class="office-location">
+            <h2 data-lang="zh">公司地址</h2>
+            <h2 data-lang="en" style="display:none;">Office Location</h2>
+            <h2 data-lang="jp" style="display:none;">会社の住所</h2>
+            <p data-lang="zh">PO Box 20072, 4910-50th Street, Yellowknife, NT X1A 3X8 Canada</p>
+            <p data-lang="en" style="display:none;">PO Box 20072, 4910-50th Street, Yellowknife, NT X1A 3X8 Canada</p>
+            <p data-lang="jp" style="display:none;">PO Box 20072, 4910-50th Street, Yellowknife, NT X1A 3X8 Canada</p>
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2310982287353!2d-114.36850208430906!3d62.450936332711824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x519d9dc849b5c2e5%3A0x91d8c0f3f2b3f26d!2sEPR%20Yellowknife%20Accounting%20Professional%20Corporation!5e0!3m2!1sen!2sca!4v1684546864178!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2 data-lang="zh">联系我</h2>
+            <h2 data-lang="en" style="display:none;">Contact Me</h2>
+            <h2 data-lang="jp" style="display:none;">お問い合わせ</h2>
+            <form action="https://formspree.io/f/mnqeryzl" method="POST">
+                <label for="name" data-lang="zh">姓名</label>
+                <label for="name" data-lang="en" style="display:none;">Full Name</label>
+                <label for="name" data-lang="jp" style="display:none;">名前</label>
+                <input type="text" id="name" name="name" placeholder="First and Last" required>
+
+                <label for="email" data-lang="zh">电子邮件</label>
+                <label for="email" data-lang="en" style="display:none;">Email Address</label>
+                <label for="email" data-lang="jp" style="display:none;">メールアドレス</label>
+                <input type="email" id="email" name="_replyto" placeholder="email@domain.tld" required>
+
+                <label for="message" data-lang="zh">留言</label>
+                <label for="message" data-lang="en" style="display:none;">Message</label>
+                <label for="message" data-lang="jp" style="display:none;">メッセージ</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+
+                <button type="submit" data-lang="zh">发送</button>
+                <button type="submit" data-lang="en" style="display:none;">Send</button>
+                <button type="submit" data-lang="jp" style="display:none;">送信</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yanfeng Shi. All rights reserved.</p>
+    </footer>
+</body>
+</html>

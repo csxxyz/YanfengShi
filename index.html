@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background: url('pexels-visit-greenland-108649-360912.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .services .service {
+            margin-bottom: 20px; /* 调整 service 部分的行距 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en" style="display:none;">Home</a><a href="index.html" data-lang="jp" style="display:none;">ホーム</a></li>
+                <li><a href="about.html" data-lang="zh">关于我</a><a href="about.html" data-lang="en" style="display:none;">About Me</a><a href="about.html" data-lang="jp" style="display:none;">私について</a></li>
+                <li><a href="services.html" data-lang="zh">服务</a><a href="services.html" data-lang="en" style="display:none;">Services</a><a href="services.html" data-lang="jp" style="display:none;">サービス</a></li>
+                <li><a href="contact.html" data-lang="zh">联系我</a><a href="contact.html" data-lang="en" style="display:none;">Contact Me</a><a href="contact.html" data-lang="jp" style="display:none;">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="language-switch">
+            <button onclick="changeLanguage('zh')">中文</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('jp')">日本語</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 data-lang="zh">Yanfeng Shi</h1>
+        <h1 data-lang="en" style="display:none;">Yanfeng Shi</h1>
+        <h1 data-lang="jp" style="display:none;">Yanfeng Shi</h1>
+
+        <h2 data-lang="zh">会计师 | EPR Yellowknife 会计专业公司</h2>
+        <h2 data-lang="en" style="display:none;">Accountant | EPR Yellowknife Accounting Professional Corporation</h2>
+        <h2 data-lang="jp" style="display:none;">会計士 | EPR Yellowknife 会計専門会社</h2>
+
+        <p data-lang="zh">作为一名资深会计师，我致力于为客户提供高质量的财务服务。我的专业领域涵盖财务会计、税务咨询、审计等。请通过导航栏了解更多信息。</p>
+        <p data-lang="en" style="display:none;">As an experienced accountant, I am committed to providing high-quality financial services to my clients. My expertise includes financial accounting, tax consulting, auditing, and more. Please use the navigation bar to learn more.</p>
+        <p data-lang="jp" style="display:none;">経験豊富な会計士として、私はお客様に高品質な財務サービスを提供することを約束します。私の専門分野には、財務会計、税務コンサルティング、監査などが含まれます。ナビゲーションバーを使用して詳細をご覧ください。</p>
+
+        <section class="services">
+            <h2 data-lang="zh">专业领域</h2>
+            <h2 data-lang="en" style="display:none;">Specialties</h2>
+            <h2 data-lang="jp" style="display:none;">専門分野</h2>
+
+            <div class="service">
+                <h3 data-lang="zh">财务会计</h3>
+                <h3 data-lang="en" style="display:none;">Financial Accounting</h3>
+                <h3 data-lang="jp" style="display:none;">財務会計</h3>
+                <p data-lang="zh">提供全面的财务会计服务，确保财务报表的准确性和及时性。</p>
+                <p data-lang="en" style="display:none;">Providing comprehensive financial accounting services to ensure the accuracy and timeliness of financial reports.</p>
+                <p data-lang="jp" style="display:none;">財務報告の正確性とタイムリー性を確保するための包括的な財務会計サービスを提供します。</p>
+            </div>
+
+            <div class="service">
+                <h3 data-lang="zh">税务咨询</h3>
+                <h3 data-lang="en" style="display:none;">Tax Consulting</h3>
+                <h3 data-lang="jp" style="display:none;">税務コンサルティング</h3>
+                <p data-lang="zh">专业的税务咨询服务，帮助客户合理避税并优化税务结构。</p>
+                <p data-lang="en" style="display:none;">Professional tax consulting services to help clients optimize their tax structure and minimize tax liabilities.</p>
+                <p data-lang="jp" style="display:none;">お客様が税務構造を最適化し、税負担を最小限に抑えるための専門的な税務コンサルティングサービスを提供します。</p>
+            </div>
+
+            <div class="service">
+                <h3 data-lang="zh">审计服务</h3>
+                <h3 data-lang="en" style="display:none;">Audit Services</h3>
+                <h3 data-lang="jp" style="display:none;">監査サービス</h3>
+                <p data-lang="zh">提供独立、客观的审计服务，确保财务信息的真实性和可靠性。</p>
+                <p data-lang="en" style="display:none;">Providing independent and objective audit services to ensure the accuracy and reliability of financial information.</p>
+                <p data-lang="jp" style="display:none;">財務情報の正確性と信頼性を確保するための独立した客観的な監査サービスを提供します。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yanfeng Shi. All rights reserved.</p>
+    </footer>
+</body>
+</html>

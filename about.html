@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background: url('pexels-visit-greenland-108649-360912.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en" style="display:none;">Home</a><a href="index.html" data-lang="jp" style="display:none;">ホーム</a></li>
+                <li><a href="about.html" data-lang="zh">关于我</a><a href="about.html" data-lang="en" style="display:none;">About Me</a><a href="about.html" data-lang="jp" style="display:none;">私について</a></li>
+                <li><a href="services.html" data-lang="zh">服务</a><a href="services.html" data-lang="en" style="display:none;">Services</a><a href="services.html" data-lang="jp" style="display:none;">サービス</a></li>
+                <li><a href="contact.html" data-lang="zh">联系我</a><a href="contact.html" data-lang="en" style="display:none;">Contact Me</a><a href="contact.html" data-lang="jp" style="display:none;">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="language-switch">
+            <button onclick="changeLanguage('zh')">中文</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('jp')">日本語</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 data-lang="zh">关于我</h1>
+        <h1 data-lang="en" style="display:none;">About Me</h1>
+        <h1 data-lang="jp" style="display:none;">私について</h1>
+
+        <section class="education">
+            <h2 data-lang="zh">教育背景</h2>
+            <h2 data-lang="en" style="display:none;">Education</h2>
+            <h2 data-lang="jp" style="display:none;">教育背景</h2>
+            <p data-lang="zh">2017年9月 - 2021年7月 | 沈阳理工大学<br>管理学学士<br>专业：会计学<br>主修科目：财务会计、管理会计、成本会计、财务管理、国际税务法等</p>
+            <p data-lang="en" style="display:none;">September 2017 - July 2021 | Shenyang Ligong University<br>Bachelor of Management<br>Major: Accounting<br>Main Courses: Financial Accounting, Management Accounting, Cost Accounting, Financial Management, International Tax Law, etc.</p>
+            <p data-lang="jp" style="display:none;">2017年9月 - 2021年7月 | 瀋陽理工大学<br>管理学学士<br>専攻: 会計学<br>主な科目: 財務会計、管理会計、原価計算、財務管理、国際税法など</p>
+        </section>
+
+        <section class="work-experience">
+            <h2 data-lang="zh">工作经验</h2>
+            <h2 data-lang="en" style="display:none;">Work Experience</h2>
+            <h2 data-lang="jp" style="display:none;">職歴</h2>
+
+            <h3 data-lang="zh">在加拿大 (2022-2024)</h3>
+            <h3 data-lang="en" style="display:none;">In Canada (2022-2024)</h3>
+            <h3 data-lang="jp" style="display:none;">カナダで (2022-2024)</h3>
+            <p data-lang="zh">2022年11月 - 至今 | 会计师 | EPR Yellowknife Accounting Professional Corporation<br>审计文件准备及支持、总账分录、与客户沟通、财务报表准备、工资单和GST申报、账户对账、公司和个人报税准备、簿记和行政任务</p>
+            <p data-lang="en" style="display:none;">November 2022 - Present | Accountant | EPR Yellowknife Accounting Professional Corporation<br>Audit file preparation and support, general ledger entries, client communication, financial statement preparation, payroll and GST filing, account reconciliation, corporate and personal tax preparation, bookkeeping and administrative tasks</p>
+            <p data-lang="jp" style="display:none;">2022年11月 - 現在 | 会計士 | EPR Yellowknife Accounting Professional Corporation<br>監査ファイルの準備とサポート、総勘定元帳の入力、クライアントとのコミュニケーション、財務諸表の作成、給与およびGST申告、口座の調整、企業および個人の税務申告の準備、簿記および管理業務</p>
+
+            <h3 data-lang="zh">在中国 (2019-2022)</h3>
+            <h3 data-lang="en" style="display:none;">In China (2019-2022)</h3>
+            <h3 data-lang="jp" style="display:none;">中国で (2019-2022)</h3>
+            <p data-lang="zh">会计助理、审计助理、测试服务工程师<br>参与审计，负责审查台账，凭证收集准备</p>
+            <p data-lang="en" style="display:none;">Accounting Assistant, Audit Assistant, Test Service Engineer<br>Participated in audits, responsible for reviewing ledgers, and preparing vouchers</p>
+            <p data-lang="jp" style="display:none;">会計アシスタント、監査アシスタント、テストサービスエンジニア<br>監査に参加し、台帳のレビュー、証憑の準備を担当</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yanfeng Shi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
