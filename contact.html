@@ -30,21 +30,130 @@
 
             <div class="map">
                 <h3>公司地址 | Office Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9273.150835937395!2d-114.37050025873362!3d62.45159684174871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x519df1b24bde3db7%3A0x92f6fda7986180a0!2sEPR%20Yellowknife%20Accounting%20Professional%20Corporation!5e0!3m2!1sen!2sca!4v1623088452320!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2310982287353!2d-114.36850208430906!3d62.450936332711824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x519d9dc849b5c2e5%3A0x91d8c0f3f2b3f26d!2sEPR%20Yellowknife%20Accounting%20Professional%20Corporation!5e0!3m2!1sen!2sca!4v1684546864178!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
-            <form action="https://formspree.io/f/mnqeryzl" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                
-                <button type="submit">Send</button>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mnqeryzl" method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    <label for="message">Message</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Your message here..." required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
             </form>
+            <style>
+                /* reset */
+                #fs-frm input,
+                #fs-frm select,
+                #fs-frm textarea,
+                #fs-frm fieldset,
+                #fs-frm optgroup,
+                #fs-frm label,
+                #fs-frm #card-element:disabled {
+                  font-family: inherit;
+                  font-size: 100%;
+                  color: inherit;
+                  border: none;
+                  border-radius: 0;
+                  display: block;
+                  width: 100%;
+                  padding: 0;
+                  margin: 0;
+                  -webkit-appearance: none;
+                  -moz-appearance: none;
+                }
+                #fs-frm label,
+                #fs-frm legend,
+                #fs-frm ::placeholder {
+                  font-size: .825rem;
+                  margin-bottom: .5rem;
+                  padding-top: .2rem;
+                  display: flex;
+                  align-items: baseline;
+                }
+
+                /* border, padding, margin, width */
+                #fs-frm input,
+                #fs-frm select,
+                #fs-frm textarea,
+                #fs-frm #card-element {
+                  border: 1px solid rgba(0,0,0,0.2);
+                  background-color: rgba(255,255,255,0.9);
+                  padding: .75em 1rem;
+                  margin-bottom: 1.5rem;
+                }
+                #fs-frm input:focus,
+                #fs-frm select:focus,
+                #fs-frm textarea:focus {
+                  background-color: white;
+                  outline-style: solid;
+                  outline-width: thin;
+                  outline-color: gray;
+                  outline-offset: -1px;
+                }
+                #fs-frm [type="text"],
+                #fs-frm [type="email"] {
+                  width: 100%;
+                }
+                #fs-frm [type="button"],
+                #fs-frm [type="submit"],
+                #fs-frm [type="reset"] {
+                  width: auto;
+                  cursor: pointer;
+                  -webkit-appearance: button;
+                  -moz-appearance: button;
+                  appearance: button;
+                }
+                #fs-frm [type="button"]:focus,
+                #fs-frm [type="submit"]:focus,
+                #fs-frm [type="reset"]:focus {
+                  outline: none;
+                }
+                #fs-frm [type="submit"],
+                #fs-frm [type="reset"] {
+                  margin-bottom: 0;
+                }
+                #fs-frm select {
+                  text-transform: none;
+                }
+
+                #fs-frm [type="checkbox"] {
+                  -webkit-appearance: checkbox;
+                  -moz-appearance: checkbox;
+                  appearance: checkbox;
+                  display: inline-block;
+                  width: auto;
+                  margin: 0 .5em 0 0 !important;
+                }
+
+                #fs-frm [type="radio"] {
+                  -webkit-appearance: radio;
+                  -moz-appearance: radio;
+                  appearance: radio;
+                }
+
+                /* address, locale */
+                #fs-frm fieldset.locale input[name="city"],
+                #fs-frm fieldset.locale select[name="state"],
+                #fs-frm fieldset.locale input[name="postal-code"] {
+                  display: inline;
+                }
+                #fs-frm fieldset.locale input[name="city"] {
+                  width: 52%;
+                }
+                #fs-frm fieldset.locale select[name="state"],
+                #fs-frm fieldset.locale input[name="postal-code"] {
+                  width: 20%;
+                }
+                #fs-frm fieldset.locale input[name="city"],
+                #fs-frm fieldset.locale select[name="state"] {
+                  margin-right: 3%;
+                }
+            </style>
         </section>
 
         <footer>
