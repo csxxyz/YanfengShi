@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            background: url('pexels-visit-greenland-108649-360912.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .resources ul {
+            line-height: 2.5; /* 增加 resources 部分的行距 */
+        }
+        .resources li {
+            margin-bottom: 15px; /* 增加每个资源项目的间距 */
+        }
+        .resources li a {
+            color: #0056b3; /* 设置链接颜色 */
+        }
+        .resources img {
+            width: 50%; /* 调整图片大小 */
+            display: block;
+            margin: 20px auto; /* 图片居中 */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html" data-lang="zh">首页</a><a href="index.html" data-lang="en" style="display:none;">Home</a><a href="index.html" data-lang="jp" style="display:none;">ホーム</a></li>
+                <li><a href="about.html" data-lang="zh">关于我</a><a href="about.html" data-lang="en" style="display:none;">About Me</a><a href="about.html" data-lang="jp" style="display:none;">私について</a></li>
+                <li><a href="services.html" data-lang="zh">服务</a><a href="services.html" data-lang="en" style="display:none;">Services</a><a href="services.html" data-lang="jp" style="display:none;">サービス</a></li>
+                <li><a href="resources.html" data-lang="zh">资源</a><a href="resources.html" data-lang="en" style="display:none;">Resources</a><a href="resources.html" data-lang="jp" style="display:none;">リソース</a></li>
+                <li><a href="contact.html" data-lang="zh">联系我</a><a href="contact.html" data-lang="en" style="display:none;">Contact Me</a><a href="contact.html" data-lang="jp" style="display:none;">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        <div class="language-switch">
+            <button onclick="changeLanguage('zh')">中文</button>
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('jp')">日本語</button>
+        </div>
+    </header>
+
+    <main class="resources">
+        <h1 data-lang="zh">资源</h1>
+        <h1 data-lang="en" style="display:none;">Resources</h1>
+        <h1 data-lang="jp" style="display:none;">リソース</h1>
+
+        <section>
+            <h2 data-lang="zh">个人资源</h2>
+            <h2 data-lang="en" style="display:none;">Individual Resources</h2>
+            <h2 data-lang="jp" style="display:none;">個人リソース</h2>
+            <ul>
+                <li data-lang="zh"><a href="#">税务申报所需信息</a></li>
+                <li data-lang="en" style="display:none;"><a href="#">Information needed to complete tax returns</a></li>
+                <li data-lang="jp" style="display:none;"><a href="#">税務申告に必要な情報</a></li>
+
+                <li data-lang="zh"><a href="#">关于税务申报的所有信息</a></li>
+                <li data-lang="en" style="display:none;"><a href="#">All about your tax return</a></li>
+                <li data-lang="jp" style="display:none;"><a href="#">税務申告についてのすべて</a></li>
+
+                <li data-lang="zh"><a href="#">加拿大税务局</a></li>
+                <li data-lang="en" style="display:none;"><a href="#">Canada Revenue Agency</a></li>
+                <li data-lang="jp" style="display:none;"><a href="#">カナダ歳入庁</a></li>
+            </ul>
+            <img src="DALL·E 2024-05-22 14.25.51 - An image representing the Canada Revenue Agency (CRA). Show the official CRA logo and building with a Canadian flag, symbolizing the Canadian governme.webp" alt="Canada Revenue Agency">
+        </section>
+
+        <section>
+            <h2 data-lang="zh">行政资源</h2>
+            <h2 data-lang="en" style="display:none;">Administrative Resources</h2>
+            <h2 data-lang="jp" style="display:none;">管理リソース</h2>
+            <ul>
+                <li data-lang="zh"><a href="#">北方新闻招标页面</a></li>
+                <li data-lang="en" style="display:none;"><a href="#">News North Tender Page</a></li>
+                <li data-lang="jp" style="display:none;"><a href="#">ニュースノース入札ページ</a></li>
+
+                <li data-lang="zh"><a href="#">西北地区招标页面</a></li>
+                <li data-lang="en" style="display:none;"><a href="#">G.N.W.T. Tender Page</a></li>
+                <li data-lang="jp" style="display:none;"><a href="#">G.N.W.T.入札ページ</a></li>
+
+                <li data-lang="zh"><a href="#">努纳武特招标页面</a></li>
+                <li data-lang="en" style="display:none;"><a href="#">Govt. of Nunavut Tender Page</a></li>
+                <li data-lang="jp" style="display:none;"><a href="#">ヌナブト政府入札ページ</a></li>
+
+                <li data-lang="zh"><a href="#">加拿大政府合同机会</a></li>
+                <li data-lang="en" style="display:none;"><a href="#">Govt. of Canada Contract Opportunities</a></li>
+                <li data-lang="jp" style="display:none;"><a href="#">カナダ政府の契約機会</a></li>
+            </ul>
+            <img src="DALL·E 2024-05-22 14.25.56 - An image depicting the work of an auditor. Show an auditor in a professional office setting, examining financial documents and reports, using a calcul.webp" alt="Auditor">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Yanfeng Shi. All rights reserved.</p>
+    </footer>
+</body>
+</html>
